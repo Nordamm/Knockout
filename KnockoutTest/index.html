@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<head>
+    <title>KnockoutJS Simple Example</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/knockout/knockout-3.1.0.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <br /><br />
+    <h1>SOVA <input type="text" name="search" placeholder="Search..">
+    </h1>
+
+    <div class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Favorite Posts</a></li>
+            <li><a href="">Personal Notes</a></li>
+
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Login Here</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <p id="p1">Username: <input data-bind="value: firstString" /></p>
+                    <p id="p1">Password: <input data-bind="value: secondString" /></p>
+                </div>
+            </div>
+
+            <p id="p2"><strong data-bind="text: firstString"></strong></p>
+            <!--<p id="p2">Second String: <strong data-bind="text: secondString"></strong></p>
+            <p id="p2">Derived String: <strong data-bind="text: thirdString"></strong></p>-->
+
+        </ul>
+    </div>
+
+    <p id="p3">Term:</p>
+    <p id="p3">Count:</p>
+    <p id="p3">Rating:</p>
+
+    <textarea>
+    Lorem ipsum dolor sit amet, sem ac dis ut donec, vestibulum at arcu, quis eu urna mauris mattis. Sed neque ornare per lacus, lorem sed lobortis a eu quisque eu, tincidunt odio eget ut ac. Eleifend at suspendisse duis sodales platea enim, mauris sed nunc sit neque. Sit sed, euismod sem mattis eleifend convallis nec dolor. Sit rutrum vel non, eu in quis sit, commodo tincidunt. Sapien morbi vel augue arcu neque, a mauris nullam cursus per, turpis erat quis cras metus neque, ligula vitae velit vel officia in placerat. Turpis at iaculis montes curabitur mollis lacinia, gravida orci. Non aptent, est commodo fringilla cursus quam, proin ipsum luctus volutpat malesuada, pharetra netus nisl erat arcu, bibendum pretium porta dui. Molestie pellentesque wisi penatibus, egestas justo sociis ac.
+    Nonummy torquent massa, nulla arcu velit massa soluta, lacinia tincidunt rutrum aliquam ut. Sed conubia tempor sed sit, eros vel, quis feugiat elementum erat nulla consectetuer, suscipit sagittis ultricies amet. In pellentesque, risus sollicitudin etiam. Blandit faucibus congue at justo elementum, commodo cras condimentum sit pede amet, purus eu dolor dolor, sapien donec bibendum metus. Elit lectus congue vivamus aenean elementum, dolor fusce blandit potenti, dapibus suspendisse velit, purus massa tempus vel, placerat dolor fames commodo vivamus magna ligula.
+    Interdum nullam adipiscing fusce, urna semper, diam molestie. Maecenas integer elementum libero, proin accumsan aliquam. Nec magna, et sit, purus lorem platea amet. Ut maecenas nec fermentum elit non in, turpis phasellus metus mus erat aliquam, lectus felis, vel vel placerat. Ut dapibus donec at etiam purus, quam vel duis massa lectus posuere, vel erat in, non libero, gravida id elit. Velit vitae quis elementum etiam dapibus, id fames commodo eget vel.
+    Sapien vestibulum, quis in ligula, quam eu mattis quisque a. Eget velit nibh, sollicitudin a consequat ac imperdiet sed ut, porttitor quia, mollis arcu et feugiat maecenas, et massa suscipit euismod nulla. Quis sit, in urna, sem sodales ullamcorper sed, lacus suscipit urna quisque. Pellentesque reprehenderit, morbi etiam est, eu gravida vel cubilia aenean augue, hendrerit urna eget mi sapien. Lacus lacus sollicitudin.
+    </textarea>
+
+
+    <script>
+    function AppViewModel() {
+    this.firstString = ko.observable("");
+    this.secondString = ko.observable("");
+    this.thirdString = ko.computed(function() {
+    return this.firstString() + " " + this.secondString();
+    }, this);
+ }
+ ko.applyBindings(new AppViewModel());
+
+
+
+        function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+      }
+    }
+  }
+}
+    </script>
+</body>
+</html>

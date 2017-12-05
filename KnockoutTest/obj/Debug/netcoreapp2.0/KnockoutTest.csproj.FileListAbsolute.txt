@@ -1,0 +1,11 @@
+/Users/Nordam/Projects/KnockoutTest/KnockoutTest/bin/Debug/netcoreapp2.0/KnockoutTest.deps.json
+/Users/Nordam/Projects/KnockoutTest/KnockoutTest/bin/Debug/netcoreapp2.0/KnockoutTest.runtimeconfig.json
+/Users/Nordam/Projects/KnockoutTest/KnockoutTest/bin/Debug/netcoreapp2.0/KnockoutTest.runtimeconfig.dev.json
+/Users/Nordam/Projects/KnockoutTest/KnockoutTest/bin/Debug/netcoreapp2.0/KnockoutTest.dll
+/Users/Nordam/Projects/KnockoutTest/KnockoutTest/bin/Debug/netcoreapp2.0/KnockoutTest.pdb
+/Users/Nordam/Projects/KnockoutTest/KnockoutTest/obj/Debug/netcoreapp2.0/KnockoutTest.csprojResolveAssemblyReference.cache
+/Users/Nordam/Projects/KnockoutTest/KnockoutTest/obj/Debug/netcoreapp2.0/KnockoutTest.csproj.CoreCompileInputs.cache
+/Users/Nordam/Projects/KnockoutTest/KnockoutTest/obj/Debug/netcoreapp2.0/KnockoutTest.AssemblyInfoInputs.cache
+/Users/Nordam/Projects/KnockoutTest/KnockoutTest/obj/Debug/netcoreapp2.0/KnockoutTest.AssemblyInfo.cs
+/Users/Nordam/Projects/KnockoutTest/KnockoutTest/obj/Debug/netcoreapp2.0/KnockoutTest.dll
+/Users/Nordam/Projects/KnockoutTest/KnockoutTest/obj/Debug/netcoreapp2.0/KnockoutTest.pdb
